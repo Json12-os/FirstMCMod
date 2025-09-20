@@ -1,5 +1,8 @@
 package ide.ls.firstmodlss;
 
+import ide.ls.firstmodlss.item.ModItems;
+import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.level.ItemLike;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -20,14 +23,15 @@ import net.neoforged.neoforge.event.server.ServerStartingEvent;
 
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
-@Mod(FirstModLss.MOD_ID)
-public class FirstModLss {
+@Mod(FirstModLSs.MOD_ID)
+public class FirstModLSs {
     public static final String MOD_ID = "firstmodlss";
     public static final Logger LOGGER = LogUtils.getLogger();
 
-    public FirstModLss(IEventBus modEventBus, ModContainer modContainer) {
+    public FirstModLSs(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
         NeoForge.EVENT_BUS.register(this);
+        ModItems.register(modEventBus);
         modEventBus.addListener(this::addCreative);
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
@@ -36,13 +40,18 @@ public class FirstModLss {
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.MONEY1);
+            event.accept(ModItems.MONEY2);
+            event.accept(ModItems.MONEY0);
+        }
     }
 
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
     }
 
-    @EventBusSubscriber(modid = FirstModLss.MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+    @EventBusSubscriber(modid = FirstModLSs.MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     static class ClientModEvents {
         @SubscribeEvent
         static void onClientSetup(FMLClientSetupEvent event) {
