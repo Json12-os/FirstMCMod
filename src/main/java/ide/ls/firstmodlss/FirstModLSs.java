@@ -33,6 +33,7 @@ public class FirstModLSs {
         modEventBus.addListener(this::commonSetup);
         NeoForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
@@ -46,12 +47,12 @@ public class FirstModLSs {
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+       /* if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.MONEY1);
             event.accept(ModItems.MONEY2);
             event.accept(ModItems.MONEY0);
             event.accept(ModBlocks.JOB_MASON_BLOCK);
-        }
+        }*/
     }
 
     @SubscribeEvent
