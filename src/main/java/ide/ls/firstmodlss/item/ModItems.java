@@ -11,7 +11,7 @@ public class ModItems {
 
 
     public static final DeferredItem<Item> MONEY1 = ITEMS.register("moneyone",
-        () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> MONEY0 = ITEMS.register("moneyzero",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> MONEY2 = ITEMS.register("moneytwo",

@@ -1,5 +1,6 @@
 {
   "item.firstmodlss.moneyone": "Silver Coins",
   "item.firstmodlss.moneyzero": "Copper Coins",
-  "item.firstmodlss.moneytwo": "Gold Coins"
+  "item.firstmodlss.moneytwo": "Gold Coins",
+  "block.firstmodlss.job_mason_block": "Mason Jobsite Block"
 }

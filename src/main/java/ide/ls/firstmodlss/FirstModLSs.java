@@ -1,5 +1,6 @@
 package ide.ls.firstmodlss;
 
+import ide.ls.firstmodlss.block.ModBlocks;
 import ide.ls.firstmodlss.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.ItemLike;
@@ -31,7 +32,12 @@ public class FirstModLSs {
     public FirstModLSs(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
         NeoForge.EVENT_BUS.register(this);
+
+
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
+
         modEventBus.addListener(this::addCreative);
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
@@ -44,6 +50,7 @@ public class FirstModLSs {
             event.accept(ModItems.MONEY1);
             event.accept(ModItems.MONEY2);
             event.accept(ModItems.MONEY0);
+            event.accept(ModBlocks.JOB_MASON_BLOCK);
         }
     }
 
