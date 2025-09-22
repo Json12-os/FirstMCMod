@@ -2,5 +2,11 @@
   "item.firstmodlss.moneyone": "Silver Coins",
   "item.firstmodlss.moneyzero": "Copper Coins",
   "item.firstmodlss.moneytwo": "Gold Coins",
-  "block.firstmodlss.job_mason_block": "Mason Jobsite Block"
+  "block.firstmodlss.job_mason_block": "Mason Jobsite Block",
+  "item.firstmodlss.stone_brick": "Stone Brick",
+  "item.firstmodlss.granite_brick": "Granit Brick",
+  "item.firstmodlss.diorite_brick": "Diorite Brick",
+  "item.firstmodlss.andesite_brick": "Andesite Brick",
+  "item.firstmodlss.deepslate_brick": "Deepslate Brick",
+  "item.firstmodlss.chisel_tool": "Chisel"
 }

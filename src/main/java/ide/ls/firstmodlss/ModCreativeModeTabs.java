@@ -21,7 +21,18 @@ public class ModCreativeModeTabs {
                 output.accept(ModItems.MONEY0);
                 output.accept(ModItems.MONEY1);
                 output.accept(ModItems.MONEY2);
+                output.accept(ModItems.CHISEL_TOOL);
                 output.accept(ModBlocks.JOB_MASON_BLOCK);
+                output.accept(ModBlocks.CRACKED_STONE);
+                output.accept(ModBlocks.CRACKED_ANDESITE);
+                output.accept(ModBlocks.CRACKED_GRANITE);
+                output.accept(ModBlocks.CRACKED_DIORITE);
+                output.accept(ModBlocks.CRACKED_DEEPSLATE);
+                output.accept(ModItems.STONE_BRICK);
+                output.accept(ModItems.DEEPSLATE_BRICK);
+                output.accept(ModItems.ANDESITE_BRICK);
+                output.accept(ModItems.DIORITE_BRICK);
+                output.accept(ModItems.GRANITE_BRICK);
             })
             .build());
 
