@@ -21,7 +21,8 @@ public class ChiselItem extends Item {
                     Blocks.STONE, ModBlocks.CRACKED_STONE.get(),
                     Blocks.GRANITE, ModBlocks.CRACKED_GRANITE.get(),
                     Blocks.ANDESITE, ModBlocks.CRACKED_ANDESITE.get(),
-                    Blocks.DIORITE, ModBlocks.CRACKED_DIORITE.get()
+                    Blocks.DIORITE, ModBlocks.CRACKED_DIORITE.get(),
+                    Blocks.DEEPSLATE, ModBlocks.CRACKED_DEEPSLATE.get()
             );
 
     public ChiselItem(Properties properties) {
