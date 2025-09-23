@@ -8,5 +8,6 @@
   "item.firstmodlss.diorite_brick": "Diorite Brick",
   "item.firstmodlss.andesite_brick": "Andesite Brick",
   "item.firstmodlss.deepslate_brick": "Deepslate Brick",
-  "item.firstmodlss.chisel_tool": "Chisel"
+  "item.firstmodlss.chisel_tool": "Chisel",
+  "block.firstmodlss.gear_box": "Gear Box"
 }

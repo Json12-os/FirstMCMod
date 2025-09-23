@@ -1,0 +1,22 @@
+{
+  "parent": "block/block",
+  "textures": {
+    "front": "firstmodlss:block/shaft_front",
+    "side": "firstmodlss:block/shaft_side",
+    "side90": "firstmodlss:block/90shaft_side"
+  },
+  "elements": [
+    {
+      "from": [6, 0, 6],
+      "to":   [10, 16, 10],
+      "faces": {
+        "north": { "texture": "#side90" },
+        "south": { "texture": "#side90" },
+        "east":  { "texture": "#side90" },
+        "west":  { "texture": "#side90" },
+        "up":    { "texture": "#front" },
+        "down":  { "texture": "#front" }
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "axis=y": {
+      "model": "firstmodlss:block/shaft_1"
+    },
+    "axis=z": {
+      "model": "firstmodlss:block/shaft_2"
+    },
+    "axis=x": {
+      "model": "firstmodlss:block/shaft_3"
+    }
+  }
+}

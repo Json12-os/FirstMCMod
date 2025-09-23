@@ -33,6 +33,8 @@ public class ModCreativeModeTabs {
                 output.accept(ModItems.ANDESITE_BRICK);
                 output.accept(ModItems.DIORITE_BRICK);
                 output.accept(ModItems.GRANITE_BRICK);
+                output.accept(ModBlocks.SHAFT);
+                output.accept(ModBlocks.GEAR_BOX);
             })
             .build());
 

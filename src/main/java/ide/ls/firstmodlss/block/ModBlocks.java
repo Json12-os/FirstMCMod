@@ -1,6 +1,9 @@
 package ide.ls.firstmodlss.block;
 
 import ide.ls.firstmodlss.FirstModLSs;
+import ide.ls.firstmodlss.block.custom.GearBox;
+import ide.ls.firstmodlss.block.custom.Power;
+import ide.ls.firstmodlss.block.custom.Shaft;
 import ide.ls.firstmodlss.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -49,6 +52,14 @@ public class ModBlocks {
                     // . & meno of properties
                     .strength(1.5F, 6F)
                     .mapColor(MapColor.STONE)
+            ));
+    public static final DeferredBlock<Shaft> SHAFT = registerBlock("shaft",
+            () -> new Shaft(BlockBehaviour.Properties.of()
+
+            ));
+    public static final DeferredBlock<GearBox> GEAR_BOX = registerBlock("gear_box",
+            () -> new GearBox(BlockBehaviour.Properties.of()
+
             ));
 
 
